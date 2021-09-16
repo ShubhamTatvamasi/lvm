@@ -10,3 +10,7 @@ list volume groups
 vgs
 ```
 
+list logical volumes
+```bash
+lvs
+```
