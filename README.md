@@ -25,6 +25,13 @@ Create Phisical Volume from a disk:
 pvcreate /dev/xvdc
 ```
 
+Create Volume group:
+```bash
+vgcreate vg_extra /dev/xvdc
+```
+
+---
+
 Extend existing volume group:
 ```bash
 vgextend vg_ubuntu /dev/xvdc
