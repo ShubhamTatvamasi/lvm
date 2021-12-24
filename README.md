@@ -1,5 +1,13 @@
 # lvm
 
+List Physical volumes:
+```bash
+pvdisplay
+```
+
+
+
+
 list physical volumes:
 ```bash
 pvs
