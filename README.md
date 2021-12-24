@@ -106,5 +106,6 @@ Give 100% free space to the file system:
 lvextend --resizefs -l +100%FREE /dev/mapper/vg_ubuntu-lv_root
 ```
 
+https://www.learnlinux.tv/linux-logical-volume-manager-lvm-deep-dive-tutorial/
 
 
