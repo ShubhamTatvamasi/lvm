@@ -18,7 +18,14 @@ lvdisplay
 lvs
 ```
 
+---
+
 Create Phisical Volume from a disk:
 ```bash
 pvcreate /dev/xvdc
+```
+
+Extend existing volume group:
+```bash
+vgextend vg_ubuntu /dev/xvdc
 ```
