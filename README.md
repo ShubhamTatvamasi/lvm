@@ -29,3 +29,10 @@ Extend existing volume group:
 ```bash
 vgextend vg_ubuntu /dev/xvdc
 ```
+
+Extend logical volume:
+```bash
+lvextend -L +10G /dev/mappper/vg_ubuntu-lv_root
+```
+
+
