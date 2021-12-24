@@ -3,30 +3,17 @@
 List Physical volumes:
 ```bash
 pvdisplay
+pvs
 ```
 
 List Volume groups:
 ```
 vgdisplay
+vgs
 ```
 
 List Logical volumes:
 ```bash
 lvdisplay
-```
-
-
-list physical volumes:
-```bash
-pvs
-```
-
-list volume groups
-```bash
-vgs
-```
-
-list logical volumes
-```bash
 lvs
 ```
