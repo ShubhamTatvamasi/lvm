@@ -41,7 +41,7 @@ lvcreate vg_extra -L 5G -n lv_volume
 
 ---
 
-### Use Volume
+### Mount Volume
 
 Format the disk file system to ext4:
 ```bash
@@ -56,6 +56,30 @@ mkdir -p /mnt/extra/volume
 Mount volume to director:
 ```bash
 mount /dev/vg_extra/lv_volume /mnt/extra/volume
+```
+
+Unmount volume:
+```bash
+umount /mnt/extra/volume
+```
+
+Get ID of logical volume:
+```bash
+blkid /dev/vg_extra/lv_volume
+```
+
+Edit fstab file and add the mount volume:
+```bash
+vim /etc/fstab
+```
+
+```
+UUID=6de8c7be-13b7-4b50-8a5d-130b08941bd3 /mnt/extra/volume ext4 defaults 0 2
+```
+
+Mount everything in fstab:
+```bash
+mount -a
 ```
 
 ---
