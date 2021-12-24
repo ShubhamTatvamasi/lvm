@@ -35,4 +35,8 @@ Extend logical volume:
 lvextend -L +10G /dev/mappper/vg_ubuntu-lv_root
 ```
 
+Resize file system:
+```bash
+resize2fs /dev/mappper/vg_ubuntu-lv_root
+```
 
