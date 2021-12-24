@@ -30,6 +30,11 @@ Create Volume group:
 vgcreate vg_extra /dev/xvdc
 ```
 
+Create Logical volume:
+```bash
+lvcreate vg_extra -L 5G -n lv_volume
+```
+
 ---
 
 Extend existing volume group:
