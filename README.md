@@ -1,11 +1,14 @@
 # lvm
 
-List Physical volumes:
+List Physical volume:
 ```bash
 pvdisplay
 ```
 
-
+List Volume group:
+```
+vgdisplay
+```
 
 
 list physical volumes:
