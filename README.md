@@ -17,3 +17,8 @@ List Logical volumes:
 lvdisplay
 lvs
 ```
+
+Create Phisical Volume from a disk:
+```bash
+pvcreate /dev/xvdc
+```
