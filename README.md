@@ -1,5 +1,7 @@
 # lvm
 
+### List
+
 List Physical volumes:
 ```bash
 pvdisplay
@@ -20,6 +22,8 @@ lvs
 
 ---
 
+### Create
+
 Create Phisical Volume from a disk:
 ```bash
 pvcreate /dev/xvdc
@@ -36,6 +40,27 @@ lvcreate vg_extra -L 5G -n lv_volume
 ```
 
 ---
+
+### Use Volume
+
+Format the disk file system to ext4:
+```bash
+mkfs.ext4 /dev/vg_extra/lv_volume
+```
+
+Create directory to mount:
+```bash
+mkdir -p /mnt/extra/volume
+```
+
+Mount volume to director:
+```bash
+mount /dev/vg_extra/lv_volume /mnt/extra/volume
+```
+
+---
+
+### Extend
 
 Extend existing volume group:
 ```bash
