@@ -2,6 +2,11 @@
 
 ### List
 
+List active volumes:
+```bash
+lvscan
+```
+
 List Physical volumes:
 ```bash
 pvdisplay
