@@ -107,25 +107,6 @@ lvextend --resizefs -l +100%FREE /dev/mapper/vg_ubuntu-lv_root
 ```
 
 
-### Xen Extend
-
-List active volumes:
-```bash
-lvscan
-```
-
-Shut down all VMs and unmount from host:
-```bash
-umount /dev/mapper/XSLocalEXT--ca2e197d--1c66--29cc--966b--22085da4cbb8-ca2e197d--1c66--29cc--966b--22085da4cbb8
-```
-
-deactivate volume:
-```bash
-lvchange -a n /dev/XSLocalEXT-ca2e197d-1c66-29cc-966b-22085da4cbb8/ca2e197d-1c66-29cc-966b-22085da4cbb8
-```
-
-
-
 https://www.learnlinux.tv/linux-logical-volume-manager-lvm-deep-dive-tutorial/
 
 
