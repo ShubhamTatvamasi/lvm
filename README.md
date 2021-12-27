@@ -114,6 +114,11 @@ List active volumes:
 lvscan
 ```
 
+Shut down all VMs and unmount from host:
+```bash
+umount /dev/mapper/XSLocalEXT--ca2e197d--1c66--29cc--966b--22085da4cbb8-ca2e197d--1c66--29cc--966b--22085da4cbb8
+```
+
 deactivate volume:
 ```bash
 lvchange -a n /dev/XSLocalEXT-ca2e197d-1c66-29cc-966b-22085da4cbb8/ca2e197d-1c66-29cc-966b-22085da4cbb8
